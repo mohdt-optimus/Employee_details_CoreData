@@ -18,6 +18,7 @@
 		DB393F3F1B6F2BFE00FA3507 /* InsertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB393F3E1B6F2BFE00FA3507 /* InsertViewController.m */; };
 		DB393F421B6F2EC600FA3507 /* BrowseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB393F411B6F2EC600FA3507 /* BrowseTableViewController.m */; };
 		DB393F451B6F4B3200FA3507 /* BrowseClickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB393F441B6F4B3200FA3507 /* BrowseClickViewController.m */; };
+		DBD639611B6F8069004DF412 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD639601B6F8069004DF412 /* SearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		DB393F411B6F2EC600FA3507 /* BrowseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseTableViewController.m; sourceTree = "<group>"; };
 		DB393F431B6F4B3200FA3507 /* BrowseClickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseClickViewController.h; sourceTree = "<group>"; };
 		DB393F441B6F4B3200FA3507 /* BrowseClickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseClickViewController.m; sourceTree = "<group>"; };
+		DBD6395F1B6F8069004DF412 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		DBD639601B6F8069004DF412 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				DB393F411B6F2EC600FA3507 /* BrowseTableViewController.m */,
 				DB393F431B6F4B3200FA3507 /* BrowseClickViewController.h */,
 				DB393F441B6F4B3200FA3507 /* BrowseClickViewController.m */,
+				DBD6395F1B6F8069004DF412 /* SearchViewController.h */,
+				DBD639601B6F8069004DF412 /* SearchViewController.m */,
 			);
 			path = EmployeeCoreData;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				DB393F3F1B6F2BFE00FA3507 /* InsertViewController.m in Sources */,
 				DB393F421B6F2EC600FA3507 /* BrowseTableViewController.m in Sources */,
 				DB393F201B6F2A5700FA3507 /* ViewController.m in Sources */,
+				DBD639611B6F8069004DF412 /* SearchViewController.m in Sources */,
 				DB393F171B6F2A5700FA3507 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +444,7 @@
 				DB393F391B6F2A5700FA3507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB393F3A1B6F2A5700FA3507 /* Build configuration list for PBXNativeTarget "EmployeeCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +453,7 @@
 				DB393F3C1B6F2A5700FA3507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
