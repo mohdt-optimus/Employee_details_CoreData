@@ -19,5 +19,6 @@
 
 - (IBAction)gallery:(id)sender;
 - (IBAction)camera:(id)sender;
+@property (weak, nonatomic) IBOutlet UIScrollView *scroll1;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end

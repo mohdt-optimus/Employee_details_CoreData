@@ -7,15 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <CoreData/CoreData.h>
 @interface BrowseClickViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *empIdLabel;
+@property (weak, nonatomic) IBOutlet UIScrollView *scroller;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *designationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *departmentLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tagLineLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imagePicture;
-@property (strong) NSManagedObjectModel *emp;
+@property (strong) NSManagedObject *emp;
 @property (weak, nonatomic) NSString *picLabel;
 
 

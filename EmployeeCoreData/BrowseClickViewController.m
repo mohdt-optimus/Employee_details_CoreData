@@ -24,11 +24,12 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _empIdLabel.text=[self.emp valueForKey:@"empId"];       //Updating the values of Label with the obtained value from segue in emp
-    _nameLabel.text=[self.emp valueForKey:@"name"];
-    _designationLabel.text=[self.emp valueForKey:@"designation"];
-    _departmentLabel.text=[self.emp valueForKey:@"department"];
-    _tagLineLabel.text=[self.emp valueForKey:@"tagLine"];
+    [_scroller setScrollEnabled:YES];
+    _empIdLabel.text=[@"Emp ID: " stringByAppendingString:[self.emp valueForKey:@"empId"]];       //Updating the values of Label with the obtained value from segue in emp
+    _nameLabel.text=[@"Name : " stringByAppendingString:[self.emp valueForKey:@"name"]];
+    _designationLabel.text=[@"Designation : " stringByAppendingString:[self.emp valueForKey:@"designation"]];
+    _departmentLabel.text=[@"Department: " stringByAppendingString:[self.emp valueForKey:@"department"]];
+    _tagLineLabel.text=[@"Tag Line: " stringByAppendingString:[self.emp valueForKey:@"tagLine"]];
     _picLabel=[self.emp valueForKey:@"pic"];
     _imagePicture.image=[self loadImage:_picLabel];
 }
@@ -46,5 +47,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
 
 @end

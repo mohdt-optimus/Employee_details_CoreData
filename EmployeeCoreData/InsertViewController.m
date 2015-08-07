@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_scroll1 setScrollEnabled:YES];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,7 +59,7 @@
         
     
     NSManagedObjectContext *context = [self managedObjectContext];
-        NSManagedObject *newEmp = [NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:context]; // create a new managedd object to take the input
+        NSManagedObject *newEmp = [NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:context]; // create a new managedd object to take the input -- Employee Here referes to the entity name
    
     [newEmp setValue:self.empId.text forKey:@"empId"];     //taking input from textfields to set the attributes
     [newEmp setValue:self.name.text forKey:@"name"];
@@ -149,5 +151,9 @@
         [message show];
         
     }
+}
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{               //This will dismiss keyboard when user touches any where in the view
+    [_scroll1 endEditing:YES];
 }
 @end
